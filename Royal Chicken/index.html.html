@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Chicken | Fresh Chicken in Ahmedabad</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <a href="#home" class="brand">
+        Royal Chicken
+    </a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+   <button class="cart-btn" onclick="openCart()">
+    🛒 Cart (<span id="cart-count">0</span>)
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-banner">
+
+      <img src="./images/royal-chicken-banner.jpeg" alt="Royal Chicken Logo">
+        
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div class="feature">
+
+        <div class="feature-icon">🍗</div>
+
+        <h3>Fresh Chicken</h3>
+
+        <p>
+            Freshly prepared every day.
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">✨</div>
+
+        <h3>Hygienic</h3>
+
+        <p>
+            Clean and hygienically prepared.
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">🚚</div>
+
+        <h3>Home Delivery</h3>
+
+        <p>
+            Fresh chicken delivered to your door.
+        </p>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="feature-icon">⭐</div>
+
+        <h3>Premium Quality</h3>
+
+        <p>
+            Quality you can trust.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+
+    <div class="section-heading">
+        <p>OUR PRODUCTS</p>
+        <h2>Fresh Chicken Collection</h2>
+        <span>Choose your favourite cut</span>
+    </div>
+
+    <div class="product-grid">
+
+
+        <!-- KHEEMA -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./images/kheema.jpeg" alt="Kheema">
+            </div>
+
+            <div class="product-info">
+                <h3>Kheema</h3>
+                <p class="price">₹400 <small>/ kg</small></p>
+
+              <button onclick="addToCart('Kheema', 400)">
+            Add to Cart
+            </button>
+            </div>
+        </div>
+
+
+        <!-- TANDOORI -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./images/tandoori.jpeg" alt="Tandoori">
+            </div>
+
+            <div class="product-info">
+                <h3>Tandoori</h3>
+                <p class="price">₹290 <small>/ kg</small></p>
+
+               <button onclick="addToCart('Tandoori', 290)">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+
+
+        <!-- CURRY CUT -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./images/curry-cut.jpeg" alt="Curry Cut">
+            </div>
+
+            <div class="product-info">
+                <h3>Curry Cut</h3>
+                <p class="price">₹270 <small>/ kg</small></p>
+
+                <button onclick="addToCart('Curry Cut', 270)">
+                 Add to Cart
+            </button>
+            </div>
+        </div>
+
+
+        <!-- BONELESS -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./images/boneless.jpeg" alt="Boneless">
+            </div>
+
+            <div class="product-info">
+                <h3>Boneless</h3>
+                <p class="price">₹400 <small>/ kg</small></p>
+
+               <button onclick="addToCart('Boneless', 400)">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+
+
+        <!-- THAI BONELESS -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./images/thai-boneless.jpeg" alt="Thai Boneless">
+            </div>
+
+            <div class="product-info">
+                <h3>Thai Boneless</h3>
+                <p class="price">₹400 <small>/ kg</small></p>
+
+               <button onclick="addToCart('Thai Boneless', 400)">
+            Add to Cart
+            </button>
+            </div>
+        </div>
+
+
+        <!-- LOLIPOP -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./images/lollipop.jpeg" alt="Lollipop">
+            </div>
+
+            <div class="product-info">
+                <h3>Lollipop</h3>
+                <p class="price">₹280 <small>/ kg</small></p>
+
+               <button onclick="addToCart('Lollipop', 280)">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+
+        <!-- LIVER -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./images/liver.jpeg" alt="Liver">
+            </div>
+
+            <div class="product-info">
+                <h3>Liver</h3>
+                <p class="price">₹150 <small>/ kg</small></p>
+
+                <button onclick="addToCart('Liver', 150)">
+                Add to Cart
+                </button>
+            </div>
+        </div>
+
+
+        <!-- GIZZARD -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./images/gizzard.jpeg" alt="Gizzard">
+            </div>
+
+            <div class="product-info">
+                <h3>Gizzard</h3>
+                <p class="price">₹150 <small>/ kg</small></p>
+
+               <button onclick="addToCart('Gizzard', 150)">
+            Add to Cart
+            </button>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-content">
+
+        <p class="section-label">
+            ABOUT ROYAL CHICKEN
+        </p>
+
+        <h2>
+            Freshness You Can
+            <span>Trust.</span>
+        </h2>
+
+        <p>
+            Royal Chicken provides fresh, hygienically prepared
+            and premium quality chicken to customers in Ahmedabad.
+            Our chicken is prepared fresh every day with care
+            and delivered directly to your doorstep.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-heading">
+
+        <p>CONTACT US</p>
+
+        <h2>Get In Touch</h2>
+
+        <span>
+            We are happy to serve you.
+        </span>
+
+    </div>
+
+
+    <div class="contact-items">
+
+        <div>
+
+            <strong>📞 Whatsapp.</strong>
+
+            <p>
+                (+91 9377382938)
+                
+            </p>
+
+        </div>
+
+
+        <!-- LOCATION -->
+
+<div class="contact-box">
+
+    <strong>📍 Our Location</strong>
+
+    <p>
+        Royal Chicken<br>
+        Makhtampura, Ahmedabad
+    </p>
+
+    <a
+        href="https://maps.app.goo.gl/KRXVUTjzu4RAoWVc6?g_st=iw"
+        target="_blank"
+        class="location-btn">
+
+        📍 Get Directions
+
+    </a>
+
+</div>
+
+        <!-- OPENING HOURS -->
+
+<div>
+
+    <strong>⏰ Opening Hours</strong>
+
+    <p>
+        Morning<br>
+        7:30 AM – 1:30 PM
+        <br><br>
+        Evening<br>
+        4:30 PM – 8:00 PM
+    </p>
+
+</div>
+
+    </div>
+    
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>Royal Chicken</h3>
+
+    <p>
+        Fresh • Hygienic • Halal
+    </p>
+
+    <p class="founder">
+        Founder: <strong>AARIF SHAIKH</strong>
+    </p>
+
+    <p class="phone-numbers">
+        (+91 9377382938), (+91 8200348170)
+    </p>
+
+    <p class="copyright">
+        © 2026 Royal Chicken. All Rights Reserved.
+    </p>
+    
+
+</footer>
+
+
+<!-- ================= CART MODAL ================= -->
+
+<div class="cart-modal" id="cart-modal">
+
+    <div class="cart-box">
+
+        <button
+            class="close-cart"
+            onclick="closeCart()"
+        >
+            ×
+        </button>
+
+        <h2>Your Cart</h2>
+
+        <div id="cart-items">
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+        </div>
+
+        <h3 id="cart-total">
+            Total: ₹0
+        </h3>
+
+
+       <form class="order-form" onsubmit="placeOrder(event)">
+
+    <input
+        type="text"
+        id="customer-name"
+        placeholder="Your Name"
+        required
+    >
+
+    <input
+        type="tel"
+        id="customer-phone"
+        placeholder="Phone Number"
+        required
+    >
+
+    <textarea
+        id="customer-address"
+        placeholder="Delivery Address"
+        required
+    ></textarea>
+
+    <button type="submit">
+        Place Order
+    </button>
+
+    </form>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+</body>
+</html>
