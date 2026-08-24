@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="google-site-verification" content="Nz1GfcnGb90ZH8gnbZdqq3q8sxC9ZDuWoTQg9PNODwI" />
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Royal Chicken | Fresh Chicken Ahmedabad</title>
+    <title>Royal Chicken | Fresh Chicken in Ahmedabad</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -132,6 +134,18 @@
         <h2>Fresh Chicken Collection</h2>
         <span>Choose your favourite cut</span>
     </div>
+    <!-- PRODUCT SEARCH -->
+
+<div class="product-search-box">
+
+    <input
+        type="text"
+        id="product-search"
+        placeholder="🔍 Search chicken..."
+        oninput="searchProducts()"
+    >
+
+</div>
 
     <div class="product-grid">
 
@@ -151,24 +165,74 @@
             </button>
             </div>
         </div>
+        <!-- Bombay Legs -->
+<div class="product-card">
 
+    <div class="product-image">
+        <img src="images/bombay-legs.jpeg" alt="Bombay Legs">
+    </div>
 
-        <!-- TANDOORI -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="./images/tandoori.jpeg" alt="Tandoori">
-            </div>
+    <div class="product-info">
 
-            <div class="product-info">
-                <h3>Tandoori</h3>
-                <p class="price">₹290 <small>/ kg</small></p>
+        <h3>Bombay Legs</h3>
 
-               <button onclick="addToCart('Tandoori', 290)">
-                Add to Cart
-            </button>
-            </div>
+        <div class="price">
+            ₹270 <small>/ kg</small>
         </div>
 
+        <button onclick="addToCart('Bombay Legs', 270)">
+            Add to Cart
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Wings -->
+<div class="product-card">
+
+    <div class="product-image">
+        <img src="images/wings.jpeg" alt="Wings">
+    </div>
+
+    <div class="product-info">
+
+        <h3>Wings</h3>
+
+        <div class="price">
+            ₹270 <small>/ kg</small>
+        </div>
+
+        <button onclick="addToCart('Wings', 270)">
+            Add to Cart
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Drumsticks -->
+<div class="product-card">
+
+    <div class="product-image">
+        <img src="images/drumsticks.jpeg" alt="Drumsticks">
+    </div>
+
+    <div class="product-info">
+
+        <h3>Drumsticks</h3>
+
+        <div class="price">
+            ₹270 <small>/ kg</small>
+        </div>
+
+        <button onclick="addToCart('Drumsticks', 270)">
+            Add to Cart
+        </button>
+
+    </div>
+
+</div>
 
         <!-- CURRY CUT -->
         <div class="product-card">
@@ -299,59 +363,6 @@
     </div>
 
 </section>
-<!-- ================= CUSTOMER REVIEWS ================= -->
-
-<section class="reviews" id="reviews">
-
-    <div class="section-heading">
-        <p>CUSTOMER REVIEWS</p>
-        <h2>What Our Customers Say</h2>
-        <span>Our customers' love keeps us going ❤️</span>
-    </div>
-
-    <div class="review-grid">
-
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
-
-            <p>
-                "Fresh chicken and very good quality. 
-                Delivery was also quick."
-            </p>
-
-            <h3>Ahmed</h3>
-            <span>Ahmedabad</span>
-        </div>
-
-
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
-
-            <p>
-                "Chicken was fresh, clean and properly packed.
-                Highly recommended."
-            </p>
-
-            <h3>Mohammed</h3>
-            <span>Ahmedabad</span>
-        </div>
-
-
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
-
-            <p>
-                "Very good service and premium quality chicken.
-                Will order again."
-            </p>
-
-            <h3>Arman</h3>
-            <span>Ahmedabad</span>
-        </div>
-
-    </div>
-
-</section>
 
 
 <!-- ================= CONTACT ================= -->
@@ -381,6 +392,10 @@
                 (+91 8200348170)
                 
             </p>
+             <p>
+                (+91 9377382938)
+                
+            </p>
 
         </div>
 
@@ -406,54 +421,24 @@
     </a>
 
 </div>
-<!-- ================= CUSTOMER REVIEW ================= -->
+<!-- Delivery Information -->
+<div class="contact-card">
 
-<section class="review-section" id="reviews">
-
-    <div class="section-heading">
-        <p>CUSTOMER REVIEWS</p>
-        <h2>How Was Your Experience?</h2>
-        <span>We would love to hear from you ❤️</span>
+    <div class="contact-icon">
+        🚚
     </div>
 
-    <div class="review-box">
+    <h3>Delivery Information</h3>
 
-        <h3>Rate Royal Chicken</h3>
+    <p>
+        Delivery Charge
+    </p>
 
-        <div class="rating">
-            <button type="button" onclick="selectRating(1)">★</button>
-            <button type="button" onclick="selectRating(2)">★</button>
-            <button type="button" onclick="selectRating(3)">★</button>
-            <button type="button" onclick="selectRating(4)">★</button>
-            <button type="button" onclick="selectRating(5)">★</button>
-        </div>
+    <strong>
+        ₹15 per km
+    </strong>
 
-        <p id="rating-text">Select your rating</p>
-
-        <input
-            type="text"
-            id="review-name"
-            placeholder="Your Name"
-        >
-
-        <textarea
-            id="review-message"
-            placeholder="Write your review..."
-        ></textarea>
-
-        <button
-            type="button"
-            class="submit-review"
-            onclick="submitReview()"
-        >
-            Submit Review
-        </button>
-
-        <p id="review-success"></p>
-
-    </div>
-
-</section>
+</div>
 
         <!-- OPENING HOURS -->
 
@@ -462,11 +447,8 @@
     <strong>⏰ Opening Hours</strong>
 
     <p>
-        Morning<br>
-        7:30 AM – 1:30 PM
-        <br><br>
-        Evening<br>
-        4:30 PM – 8:00 PM
+        
+        7:30 AM – 8:00 PM
     </p>
 
 </div>
@@ -549,9 +531,7 @@
         placeholder="Delivery Address"
         required
     ></textarea>
-
-
-    <!-- PAYMENT METHOD -->
+     <!-- PAYMENT METHOD -->
 
     <div class="payment-method">
 
@@ -632,8 +612,7 @@
 
 </div>
 
-
-<script src="script.js?v=2"></script>
+<script type="module" src="script.js"></script>
 
 </body>
 </html>
