@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="Nz1GfcnGb90ZH8gnbZdqq3q8sxC9ZDuWoTQg9PNODwI" />
-    
+
+    <meta name="google-site-verification"
+          content="Nz1GfcnGb90ZH8gnbZdqq3q8sxC9ZDuWoTQg9PNODwI" />
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Royal Chicken | Fresh Chicken in Ahmedabad</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-   <!-- ROYAL CHICKEN SPLASH SCREEN -->
+
+<!-- ================= SPLASH SCREEN ================= -->
 
 <div id="splash-screen">
 
@@ -30,6 +36,7 @@
 
 </div>
 
+
 <!-- ================= HEADER ================= -->
 
 <header class="header">
@@ -45,9 +52,32 @@
         <a href="#contact">Contact</a>
     </nav>
 
-   <button class="cart-btn" onclick="openCart()">
-    🛒  View Cart (<span id="cart-count">0</span>)
-    </button>
+
+    <div class="header-buttons">
+
+        <!-- MY ORDERS -->
+
+        <button
+    class="orders-btn"
+    type="button"
+    onclick="openMyOrders()"
+>
+    🧾 My Orders
+</button>
+
+
+        <!-- CART -->
+
+        <button
+            class="cart-btn"
+            type="button"
+            onclick="openCart()"
+        >
+            🛒 View Cart
+            (<span id="cart-count">0</span>)
+        </button>
+
+    </div>
 
 </header>
 
@@ -58,8 +88,10 @@
 
     <div class="hero-banner">
 
-      <img src="./images/royal-chicken-banner.jpeg" alt="Royal Chicken Logo">
-        
+        <img
+            src="./images/royal-chicken-banner.jpeg"
+            alt="Royal Chicken Logo"
+        >
 
     </div>
 
@@ -72,9 +104,13 @@
 
     <div class="feature">
 
-        <div class="feature-icon">🍗</div>
+        <div class="feature-icon">
+            🍗
+        </div>
 
-        <h3>Fresh Chicken</h3>
+        <h3>
+            Fresh Chicken
+        </h3>
 
         <p>
             Freshly prepared every day.
@@ -85,9 +121,13 @@
 
     <div class="feature">
 
-        <div class="feature-icon">✨</div>
+        <div class="feature-icon">
+            ✨
+        </div>
 
-        <h3>Hygienic</h3>
+        <h3>
+            Hygienic
+        </h3>
 
         <p>
             Clean and hygienically prepared.
@@ -98,9 +138,13 @@
 
     <div class="feature">
 
-        <div class="feature-icon">🚚</div>
+        <div class="feature-icon">
+            🚚
+        </div>
 
-        <h3>Home Delivery</h3>
+        <h3>
+            Home Delivery
+        </h3>
 
         <p>
             Fresh chicken delivered to your door.
@@ -111,9 +155,13 @@
 
     <div class="feature">
 
-        <div class="feature-icon">⭐</div>
+        <div class="feature-icon">
+            ⭐
+        </div>
 
-        <h3>Premium Quality</h3>
+        <h3>
+            Premium Quality
+        </h3>
 
         <p>
             Quality you can trust.
@@ -126,221 +174,405 @@
 
 <!-- ================= PRODUCTS ================= -->
 
-<!-- PRODUCTS -->
-<section class="products" id="products">
+<section
+    class="products"
+    id="products"
+>
 
     <div class="section-heading">
-        <p>OUR PRODUCTS</p>
-        <h2>Fresh Chicken Collection</h2>
-        <span>Choose your favourite cut</span>
+
+        <p>
+            OUR PRODUCTS
+        </p>
+
+        <h2>
+            Fresh Chicken Collection
+        </h2>
+
+        <span>
+            Choose your favourite cut
+        </span>
+
     </div>
+
+
     <!-- PRODUCT SEARCH -->
 
-<div class="product-search-box">
+    <div class="product-search-box">
 
-    <input
-        type="text"
-        id="product-search"
-        placeholder="🔍 Search chicken..."
-        oninput="searchProducts()"
-    >
+        <input
+            type="text"
+            id="product-search"
+            placeholder="🔍 Search chicken..."
+            oninput="searchProducts()"
+        >
 
-</div>
+    </div>
+
 
     <div class="product-grid">
 
 
         <!-- KHEEMA -->
+
         <div class="product-card">
+
             <div class="product-image">
-                <img src="./images/kheema.jpeg" alt="Kheema">
+
+                <img
+                    src="./images/kheema.jpeg"
+                    alt="Kheema"
+                >
+
             </div>
 
             <div class="product-info">
-                <h3>Kheema</h3>
-                <p class="price">₹400 <small>/ kg</small></p>
 
-              <button onclick="addToCart('Kheema', 400)">
-            Add to Cart
-            </button>
+                <h3>
+                    Kheema
+                </h3>
+
+                <p class="price">
+                    ₹400 <small>/ kg</small>
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart('Kheema', 400)"
+                >
+                    Add to Cart
+                </button>
+
             </div>
-        </div>
-        <!-- Bombay Legs -->
-<div class="product-card">
 
-    <div class="product-image">
-        <img src="images/bombay-legs.jpeg" alt="Bombay Legs">
-    </div>
-
-    <div class="product-info">
-
-        <h3>Bombay Legs</h3>
-
-        <div class="price">
-            ₹270 <small>/ kg</small>
         </div>
 
-        <button onclick="addToCart('Bombay Legs', 270)">
-            Add to Cart
-        </button>
 
-    </div>
+        <!-- BOMBAY LEGS -->
 
-</div>
+        <div class="product-card">
 
-<!-- Wings -->
-<div class="product-card">
+            <div class="product-image">
 
-    <div class="product-image">
-        <img src="images/wings.jpeg" alt="Wings">
-    </div>
+                <img
+                    src="images/bombay-legs.jpeg"
+                    alt="Bombay Legs"
+                >
 
-    <div class="product-info">
+            </div>
 
-        <h3>Wings</h3>
+            <div class="product-info">
 
-        <div class="price">
-            ₹270 <small>/ kg</small>
+                <h3>
+                    Bombay Legs
+                </h3>
+
+                <div class="price">
+                    ₹270 <small>/ kg</small>
+                </div>
+
+                <button
+                    type="button"
+                    onclick="addToCart('Bombay Legs', 270)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
         </div>
 
-        <button onclick="addToCart('Wings', 270)">
-            Add to Cart
-        </button>
 
-    </div>
+        <!-- WINGS -->
 
-</div>
+        <div class="product-card">
 
-<!-- Drumsticks -->
-<div class="product-card">
+            <div class="product-image">
 
-    <div class="product-image">
-        <img src="images/drumsticks.jpeg" alt="Drumsticks">
-    </div>
+                <img
+                    src="images/wings.jpeg"
+                    alt="Wings"
+                >
 
-    <div class="product-info">
+            </div>
 
-        <h3>Drumsticks</h3>
+            <div class="product-info">
 
-        <div class="price">
-            ₹270 <small>/ kg</small>
+                <h3>
+                    Wings
+                </h3>
+
+                <div class="price">
+                    ₹270 <small>/ kg</small>
+                </div>
+
+                <button
+                    type="button"
+                    onclick="addToCart('Wings', 270)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
         </div>
 
-        <button onclick="addToCart('Drumsticks', 270)">
-            Add to Cart
-        </button>
 
-    </div>
+        <!-- DRUMSTICKS -->
 
-</div>
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img
+                    src="images/drumsticks.jpeg"
+                    alt="Drumsticks"
+                >
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>
+                    Drumsticks
+                </h3>
+
+                <div class="price">
+                    ₹270 <small>/ kg</small>
+                </div>
+
+                <button
+                    type="button"
+                    onclick="addToCart('Drumsticks', 270)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
 
         <!-- CURRY CUT -->
+
         <div class="product-card">
+
             <div class="product-image">
-                <img src="./images/curry-cut.jpeg" alt="Curry Cut">
+
+                <img
+                    src="./images/curry-cut.jpeg"
+                    alt="Curry Cut"
+                >
+
             </div>
 
             <div class="product-info">
-                <h3>Curry Cut</h3>
-                <p class="price">₹270 <small>/ kg</small></p>
 
-                <button onclick="addToCart('Curry Cut', 270)">
-                 Add to Cart
-            </button>
+                <h3>
+                    Curry Cut
+                </h3>
+
+                <p class="price">
+                    ₹270 <small>/ kg</small>
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart('Curry Cut', 270)"
+                >
+                    Add to Cart
+                </button>
+
             </div>
+
         </div>
 
 
         <!-- BONELESS -->
+
         <div class="product-card">
+
             <div class="product-image">
-                <img src="./images/boneless.jpeg" alt="Boneless">
+
+                <img
+                    src="./images/boneless.jpeg"
+                    alt="Boneless"
+                >
+
             </div>
 
             <div class="product-info">
-                <h3>Boneless</h3>
-                <p class="price">₹400 <small>/ kg</small></p>
 
-               <button onclick="addToCart('Boneless', 400)">
-                Add to Cart
-            </button>
+                <h3>
+                    Boneless
+                </h3>
+
+                <p class="price">
+                    ₹400 <small>/ kg</small>
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart('Boneless', 400)"
+                >
+                    Add to Cart
+                </button>
+
             </div>
+
         </div>
 
 
         <!-- THAI BONELESS -->
+
         <div class="product-card">
+
             <div class="product-image">
-                <img src="./images/thai-boneless.jpeg" alt="Thai Boneless">
+
+                <img
+                    src="./images/thai-boneless.jpeg"
+                    alt="Thai Boneless"
+                >
+
             </div>
 
             <div class="product-info">
-                <h3>Thai Boneless</h3>
-                <p class="price">₹400 <small>/ kg</small></p>
 
-               <button onclick="addToCart('Thai Boneless', 400)">
-            Add to Cart
-            </button>
+                <h3>
+                    Thai Boneless
+                </h3>
+
+                <p class="price">
+                    ₹400 <small>/ kg</small>
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart('Thai Boneless', 400)"
+                >
+                    Add to Cart
+                </button>
+
             </div>
+
         </div>
 
 
-        <!-- LOLIPOP -->
+        <!-- LOLLIPOP -->
+
         <div class="product-card">
+
             <div class="product-image">
-                <img src="./images/lollipop.jpeg" alt="Lollipop">
+
+                <img
+                    src="./images/lollipop.jpeg"
+                    alt="Lollipop"
+                >
+
             </div>
 
             <div class="product-info">
-                <h3>Lollipop</h3>
-                <p class="price">₹280 <small>/ kg</small></p>
 
-               <button onclick="addToCart('Lollipop', 280)">
-                Add to Cart
-            </button>
+                <h3>
+                    Lollipop
+                </h3>
+
+                <p class="price">
+                    ₹280 <small>/ kg</small>
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart('Lollipop', 280)"
+                >
+                    Add to Cart
+                </button>
+
             </div>
+
         </div>
+
 
         <!-- LIVER -->
+
         <div class="product-card">
+
             <div class="product-image">
-                <img src="./images/liver.jpeg" alt="Liver">
+
+                <img
+                    src="./images/liver.jpeg"
+                    alt="Liver"
+                >
+
             </div>
 
             <div class="product-info">
-                <h3>Liver</h3>
-                <p class="price">₹150 <small>/ kg</small></p>
 
-                <button onclick="addToCart('Liver', 150)">
-                Add to Cart
+                <h3>
+                    Liver
+                </h3>
+
+                <p class="price">
+                    ₹150 <small>/ kg</small>
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart('Liver', 150)"
+                >
+                    Add to Cart
                 </button>
+
             </div>
+
         </div>
 
 
         <!-- GIZZARD -->
+
         <div class="product-card">
+
             <div class="product-image">
-                <img src="./images/gizzard.jpeg" alt="Gizzard">
+
+                <img
+                    src="./images/gizzard.jpeg"
+                    alt="Gizzard"
+                >
+
             </div>
 
             <div class="product-info">
-                <h3>Gizzard</h3>
-                <p class="price">₹150 <small>/ kg</small></p>
 
-               <button onclick="addToCart('Gizzard', 150)">
-            Add to Cart
-            </button>
+                <h3>
+                    Gizzard
+                </h3>
+
+                <p class="price">
+                    ₹150 <small>/ kg</small>
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart('Gizzard', 150)"
+                >
+                    Add to Cart
+                </button>
+
             </div>
-        </div>
 
+        </div>
 
     </div>
 
 </section>
+
+
 <!-- ================= ABOUT ================= -->
 
-<section class="about" id="about">
+<section
+    class="about"
+    id="about"
+>
 
     <div class="about-content">
 
@@ -367,13 +599,20 @@
 
 <!-- ================= CONTACT ================= -->
 
-<section class="contact" id="contact">
+<section
+    class="contact"
+    id="contact"
+>
 
     <div class="section-heading">
 
-        <p>CONTACT US</p>
+        <p>
+            CONTACT US
+        </p>
 
-        <h2>Get In Touch</h2>
+        <h2>
+            Get In Touch
+        </h2>
 
         <span>
             We are happy to serve you.
@@ -386,15 +625,16 @@
 
         <div>
 
-            <strong>📞 Whatsapp.</strong>
+            <strong>
+                📞 Whatsapp.
+            </strong>
 
             <p>
                 (+91 8200348170)
-                
             </p>
-             <p>
+
+            <p>
                 (+91 9377382938)
-                
             </p>
 
         </div>
@@ -402,59 +642,67 @@
 
         <!-- LOCATION -->
 
-<div class="contact-box">
+        <div class="contact-box">
 
-    <strong>📍 Our Location</strong>
+            <strong>
+                📍 Our Location
+            </strong>
 
-    <p>
-        Royal Chicken<br>
-        Makhtampura, Ahmedabad
-    </p>
+            <p>
+                Royal Chicken<br>
+                Makhtampura, Ahmedabad
+            </p>
 
-    <a
-        href="https://maps.app.goo.gl/KRXVUTjzu4RAoWVc6?g_st=iw"
-        target="_blank"
-        class="location-btn">
+            <a
+                href="https://maps.app.goo.gl/KRXVUTjzu4RAoWVc6?g_st=iw"
+                target="_blank"
+                class="location-btn"
+            >
+                📍 Get Directions
+            </a>
 
-        📍 Get Directions
+        </div>
 
-    </a>
 
-</div>
-<!-- Delivery Information -->
-<div class="contact-card">
+        <!-- DELIVERY -->
 
-    <div class="contact-icon">
-        🚚
-    </div>
+        <div class="contact-card">
 
-    <h3>Delivery Information</h3>
+            <div class="contact-icon">
+                🚚
+            </div>
 
-    <p>
-        Delivery Charge
-    </p>
+            <h3>
+                Delivery Information
+            </h3>
 
-    <strong>
-        ₹15 per km
-    </strong>
+            <p>
+                Delivery Charge
+            </p>
 
-</div>
+            <strong>
+                ₹15 per km
+            </strong>
+
+        </div>
+
 
         <!-- OPENING HOURS -->
 
-<div>
+        <div>
 
-    <strong>⏰ Opening Hours</strong>
+            <strong>
+                ⏰ Opening Hours
+            </strong>
 
-    <p>
-        
-        7:30 AM – 8:00 PM
-    </p>
+            <p>
+                7:30 AM – 8:00 PM
+            </p>
 
-</div>
+        </div>
 
     </div>
-    
+
 </section>
 
 
@@ -462,47 +710,62 @@
 
 <footer>
 
-    <h3>Royal Chicken</h3>
+    <h3>
+        Royal Chicken
+    </h3>
 
     <p>
         Fresh • Hygienic • Halal
     </p>
 
     <p class="founder">
-        Founder: <strong>AARIF SHAIKH</strong>
+        Founder:
+        <strong>
+            AARIF SHAIKH
+        </strong>
     </p>
 
     <p class="phone-numbers">
-        (+91 9377382938), (+91 8200348170)
+        (+91 9377382938),
+        (+91 8200348170)
     </p>
 
     <p class="copyright">
-        © 2026 Royal Chicken. All Rights Reserved.
+        ©️ 2026 Royal Chicken. All Rights Reserved.
     </p>
-    
 
 </footer>
 
 
-<!-- ================= CART MODAL ================= -->
+<!-- =====================================================
+     CART MODAL
+===================================================== -->
 
-<div class="cart-modal" id="cart-modal">
+<div
+    class="cart-modal"
+    id="cart-modal"
+>
 
     <div class="cart-box">
 
         <button
             class="close-cart"
+            type="button"
             onclick="closeCart()"
         >
             ×
         </button>
 
-        <h2>Your Cart</h2>
+        <h2>
+            Your Cart
+        </h2>
 
         <div id="cart-items">
+
             <p class="empty-cart">
                 Your cart is empty.
             </p>
+
         </div>
 
         <h3 id="cart-total">
@@ -510,89 +773,184 @@
         </h3>
 
 
-       <form class="order-form" onsubmit="placeOrder(event)">
+        <!-- ORDER FORM -->
 
-    <input
-        type="text"
-        id="customer-name"
-        placeholder="Your Name"
-        required
-    >
+        <form
+            class="order-form"
+            onsubmit="placeOrder(event)"
+        >
 
-    <input
-        type="tel"
-        id="customer-phone"
-        placeholder="Phone Number"
-        required
-    >
-
-    <textarea
-        id="customer-address"
-        placeholder="Delivery Address"
-        required
-    ></textarea>
-     <!-- PAYMENT METHOD -->
-
-    <div class="payment-method">
-
-        <h3>Payment Method</h3>
-
-        <label>
             <input
-                type="radio"
-                name="payment"
-                value="UPI"
+                type="text"
+                id="customer-name"
+                placeholder="Your Name"
                 required
-                onchange="showUPI()"
             >
-            UPI / Online Payment
-        </label>
 
-        <label>
+
             <input
-                type="radio"
-                name="payment"
-                value="Cash on Delivery"
-                onchange="hideUPI()"
+                type="tel"
+                id="customer-phone"
+                placeholder="Phone Number"
+                required
             >
-            Cash on Delivery
-        </label>
+
+
+            <textarea
+                id="customer-address"
+                placeholder="Delivery Address"
+                required
+            ></textarea>
+
+
+            <!-- PAYMENT METHOD -->
+
+            <div class="payment-method">
+
+                <h3>
+                    Payment Method
+                </h3>
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="UPI"
+                        required
+                        onchange="showUPI()"
+                    >
+
+                    UPI / Online Payment
+
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="Cash on Delivery"
+                        onchange="hideUPI()"
+                    >
+
+                    Cash on Delivery
+
+                </label>
+
+            </div>
+
+
+            <!-- UPI QR -->
+
+            <div
+                class="upi-payment"
+                id="upi-payment"
+            >
+
+                <h3>
+                    Pay Using UPI
+                </h3>
+
+                <img
+                    src="./images/payment-qr.jpeg"
+                    alt="UPI QR Code"
+                    class="payment-qr"
+                >
+
+                <p>
+                    Scan the QR code using your UPI app
+                    and complete the payment.
+                </p>
+
+            </div>
+
+
+            <button
+                type="submit"
+            >
+                Place Order
+            </button>
+
+        </form>
 
     </div>
 
-
-    <!-- UPI QR -->
-
-   <div class="upi-payment" id="upi-payment">
-
-    <h3>Pay Using UPI</h3>
-
-    <img
-        src="./images/payment-qr.jpeg"
-        alt="UPI QR Code"
-        class="payment-qr"
-    >
-
-    <p>
-        Scan the QR code using your UPI app and complete the payment.
-    </p>
-
 </div>
 
 
-   <button type="submit">
-            Place Order
+<!-- ================= MY ORDERS MODAL ================= -->
+
+<div id="orders-modal">
+
+    <div class="orders-box">
+
+        <button
+            type="button"
+            class="close-orders"
+            onclick="closeMyOrders()"
+        >
+            ×
         </button>
 
-    </form>
+        <h2>
+            🧾 My Orders
+        </h2>
+
+        <p class="orders-subtitle">
+            View your previous orders and manage them easily.
+        </p>
+
+        <div id="my-orders-content">
+
+            <div class="orders-loading">
+                <p>Loading your orders...</p>
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
+
+<!-- =====================================================
+     ORDER DETAILS MODAL
+===================================================== -->
+
+<div
+    class="order-details-modal"
+    id="order-details-modal"
+>
+
+    <div class="order-details-box">
+
+        <button
+            type="button"
+            class="close-order-details"
+            onclick="closeOrderDetails()"
+        >
+            ×
+        </button>
+
+
+        <div id="order-details-content">
+
+        </div>
+
+    </div>
+
 </div>
 
 
-<!-- FLOATING VIEW CART -->
+<!-- =====================================================
+     FLOATING CART
+===================================================== -->
 
-<div id="floating-cart" class="floating-cart">
+<div
+    id="floating-cart"
+    class="floating-cart"
+>
 
     <div class="floating-cart-info">
 
@@ -606,13 +964,22 @@
 
     </div>
 
-    <button type="button" onclick="openCart()">
+
+    <button
+        type="button"
+        onclick="openCart()"
+    >
         View Cart 🛒
     </button>
 
 </div>
 
-<script type="module" src="script.js"></script>
+
+<script
+    type="module"
+    src="script.js"
+></script>
 
 </body>
+
 </html>

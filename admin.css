@@ -5822,13 +5822,13 @@ button {
         width: 100% !important;
     }
     /* Buttons */
-    #invoice-content .invoice-action-buttons {
+    #invoice-content .invoice-action {
         display: flex !important;
         flex-direction: column !important;
         gap: 10px !important;
         padding: 15px !important;
     }
-    #invoice-content .invoice-action-buttons button {
+    #invoice-content .invoice-action {
         width: 100% !important;
         min-height: 48px !important;
     }
